@@ -1,0 +1,14 @@
+{{str}}<br/>
+{{n1}}<br/>
+
+<input value="{{n1}}" /><br/>
+<input [value]="n1"/><br/>
+N1: <input type="number" [(ngModel)]="n1"/><br/>
+N2: <input type="number" [(ngModel)]="n2"/><br/>
+
+{{n1+n2}}<br/>
+{{addValues()}}
+<input value="{{addValues()}}" readonly /><br/>
+
+<button (click)="subtractValues()">Subtract</button><br/>
+{{subtractionResult}}
